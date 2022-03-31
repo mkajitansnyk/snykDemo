@@ -11,6 +11,7 @@ public class Controller {
 
 	@GetMapping(value = "/hello")
 	public String findMyPosition(@RequestParam("name") String name){
+		int i = 1/0;
 		return "hello world!";
 	}
 
