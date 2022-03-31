@@ -24,6 +24,12 @@ public class Controller {
 
 	@GetMapping(value = "/password")
 	public String password(){
+
+		boolean isBug = true;
+		if(isBug){
+			return "wrong password";
+		}
+
 		return password;
 	}
 
