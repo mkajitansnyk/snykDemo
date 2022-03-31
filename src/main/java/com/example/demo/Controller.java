@@ -9,10 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/api")
 public class Controller {
 
+	private String password = "my-password";
+
 	@GetMapping(value = "/hello")
-	public String findMyPosition(@RequestParam("name") String name){
+	public String hello(){
 		int i = 1/0;
 		return "hello world!";
 	}
 
+	@GetMapping(value = "/password")
+	public String password(){
+		return password;
+	}
 }
